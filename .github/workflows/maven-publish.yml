@@ -36,10 +36,10 @@ jobs:
 
     - name: set up Docker Buildx
       run: |
-        docker buildx create --name multiarch-builder --use
+        docker buildx create --name multimarch-builder --use
         docker buildx inspect --bootstrap
 
-    - name: Build and push Docker imaage to Docker Hub
+    - name: Build and push Docker image to Docker Hub
       run: |
         docker buildx build --platform linux/amd64,linux/arm64 \
           -t ${{ env.DOCKER_HUB_REPO }}:latest \
