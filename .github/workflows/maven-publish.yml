@@ -44,7 +44,7 @@ jobs:
           -t ${{ env.DOCKER_HUB_REPO }}:latest \
           -t ${{ env.DOCKER_HUB_REPO }}:$GITHUB_SHA \
           --push .
-          --push .
+       
         
           
         
