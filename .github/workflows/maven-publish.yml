@@ -4,7 +4,7 @@
 name: Maven Package
 
 env:
-  DOCKER_HUB_REPO: adedeji/Docker
+  DOCKER_HUB_REPO: adedejii/Docker
   
 on:
   push:
